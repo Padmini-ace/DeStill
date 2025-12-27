@@ -11,8 +11,9 @@ export default defineConfig(({ mode }) => {
       },
       plugins: [react()],
       define: {
-        'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
-        'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
+// No need for the 'define' block for the API Key specifically.
+// Vite automatically handles variables prefixed with VITE_ 
+// when you use loadEnv.
       },
       resolve: {
         alias: {
