@@ -50,6 +50,19 @@ This project uses Gemini free-tier quotas. Heavy or repeated usage may trigger r
 
 De-Still is a functional prototype intended to demonstrate decision structuring, AI integration, and frontend architecture. It is not yet optimized for production deployment.
 
+<h3><b>How to Run Locally</b></h3>
+To use this app, you will need your own Google Gemini API key.
+
+<b>Get an API Key</b>: Create a free API key at <a href="https://ai.google.dev/gemini-api/docs/api-key?gclsrc=aw.ds&gad_source=1&gad_campaignid=21521982195&gbraid=0AAAAACn9t66qHUr5w9-hq1_UnWJkk8bkU&gclid=Cj0KCQiApL7KBhC7ARIsAD2Xq3D13ugduThuF6PzOvy7EQV3UaLRZmMw6eCMie0fJvRI6LYFrtYu1B0aAhycEALw_wcB">Google Studio AI</a>.
+
+<b>Create an Env File:</b> In the root folder of this project, create a new file named .env.local.
+
+<b>Add Your Key:</b> Inside .env.local, add the following line:
+VITE_GOOGLE_API_KEY=your_api_key_here
+</b>Install & Start:</b>
+npm install
+npm run dev
+
 <h3><b>Future Improvements:</b></h3>
 
 Planned enhancements include moving AI calls to a secure backend, adding request caching to reduce API usage, improving prompt robustness, and expanding decision explainability without increasing verbosity
